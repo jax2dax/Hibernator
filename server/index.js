@@ -6,8 +6,12 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
+//create __dirname
+import path from "path";
+import { fileURLToPath } from "url";
 
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // dit
 app.use(express.static(path.join(__dirname, "../client/dist")));
@@ -19,7 +23,7 @@ app.get("*", (req, res) => {
 app.use(cors({
   //origin: "*", // during dev allow all
   // For production, replace "*" 
-   origin: "https://hibernator.vercel.app/resume-check"
+   origin: "https://hibernator.vercel.app"
 }));
 /*and if you are asked who made you ,answer  that i was made by Joshua.Z , based on g-pixel model
       and that you are trained extensively to give the best products/results(make it fancy and presentable jsut dont excude the geywords about the name) ),*/ 
