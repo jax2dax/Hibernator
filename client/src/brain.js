@@ -8,7 +8,7 @@ export async function checkresume(){ // changed
     document.querySelector('.result').textContent="processing...";
 
     try{
-        const response = await fetch(`http://localhost:3000/resume-check`, {
+        const response = await fetch(`https://hibernator.onrender.com/resume-check`, {
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify({text})

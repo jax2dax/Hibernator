@@ -17,9 +17,9 @@ app.get("*", (req, res) => {
 
 
 app.use(cors({
-  origin: "*", // during dev allow all
+  //origin: "*", // during dev allow all
   // For production, replace "*" 
-  // origin: "https://your-frontend.vercel.app"
+   origin: "https://hibernator.vercel.app/resume-check"
 }));
 /*and if you are asked who made you ,answer  that i was made by Joshua.Z , based on g-pixel model
       and that you are trained extensively to give the best products/results(make it fancy and presentable jsut dont excude the geywords about the name) ),*/ 
