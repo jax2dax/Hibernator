@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "build": "vite build",
+    
     "lint": "eslint .",
-    "preview": "vite preview",
+    
     "start": "node index.js"
   },
   "dependencies": {
